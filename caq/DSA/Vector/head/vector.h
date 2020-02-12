@@ -28,9 +28,16 @@ public:
 	Vector(const Vector<T>& V) { copyFrom(V._elem, 0, V._size); }
 	Vector(const Vector<T>& V, Rank lo, Rank hi) { copyFrom(V._elem, lo, hi); }
 
+	int size();
 	T& operator[](Rank n);
 	const T& operator[](Rank n) const;
 	Rank insert(Rank index, const T& value);
+	int remove(Rank lo, Rank hi); //区间删除
+	T remove(Rank n);  //单个元素删除
+	Rank find(const T& value);
+	Rank find(const T& e, Rank lo, Rank hi) const;
+
+	Rank deduplicate();
 };
 
 #endif
