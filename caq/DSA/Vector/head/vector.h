@@ -38,6 +38,15 @@ public:
 	Rank find(const T& e, Rank lo, Rank hi) const;
 
 	Rank deduplicate();
+	int uniquify();
+	//Rank binSearch(T* A, const T& value, Rank lo, Rank hi);
+
+	Rank search(T const& value) const //有序向量整体查找
+	{
+		return (0 >= _size) ? -1 : search(value, 0, _size);
+	}
+	Rank search(T const& value, Rank lo, Rank hi) const; //有序向量区间查找
+
 };
 
 #endif
