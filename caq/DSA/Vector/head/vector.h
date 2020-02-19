@@ -16,6 +16,9 @@ protected:
 	void expend();
 
 	void bubbleSort(Rank lo, Rank hi);
+	void mergeSort(Rank lo, Rank hi);
+	void merge(Rank lo, Rank mi, Rank hi);
+
 public:
 	
 	Vector(int c = DEFAULT_CAPACITY, int s = 0, T v = 0) : _capacity(c) 
