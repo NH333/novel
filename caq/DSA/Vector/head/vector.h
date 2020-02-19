@@ -5,6 +5,7 @@ typedef int Rank;
 #define DEFAULT_CAPACITY 3
 
 #include <iostream>
+#include <utility>
 
 template <typename T> 
 class Vector {
@@ -13,6 +14,8 @@ private:
 protected:
 	void copyFrom(const T* A, Rank lo, Rank hi);
 	void expend();
+
+	void bubbleSort(Rank lo, Rank hi);
 public:
 	
 	Vector(int c = DEFAULT_CAPACITY, int s = 0, T v = 0) : _capacity(c) 
@@ -46,6 +49,11 @@ public:
 		return (0 >= _size) ? -1 : search(value, 0, _size);
 	}
 	Rank search(T const& value, Rank lo, Rank hi) const; //有序向量区间查找
+
+	//排序算法截口
+	void sort(Rank lo, Rank hi);
+
+	void swap(Rank a, Rank b);
 
 };
 
