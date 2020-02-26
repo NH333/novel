@@ -8,6 +8,7 @@ ListNodePosi ListNode<T>::insertAsSucc(const T& e) {
 	ListNodePosi x = new ListNode(e, this, succ);
 	succ->pred = x;
 	succ = x;
+	
 	return x;
 }
 

@@ -4,6 +4,7 @@
 typedef int Rank;
 
 #define ListNodePosi ListNode<T>*
+#include <stdio.h>
 
 template <typename T>
 struct  ListNode
