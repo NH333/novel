@@ -15,7 +15,12 @@ List<T>::List(ListNodePosi p, int n) {
 
 template <typename T>
 List<T>::List(const List<T>& L, Rank r, int n) {
-	
+	ListNodePosi p = L.first();
+	while (0<r--)
+	{
+		p = p->succ;
+	}
+	copyNodes(p, n);
 }
 
 #endif
