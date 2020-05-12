@@ -2,7 +2,7 @@
 #define BIN_NODE_H
 
 #define BinNodePosi BinNode<T>*
-
+#define stature(p) ((p)?(p)->height:-1)
 #include <iostream>
 
 template <typename T> struct BinNode
@@ -28,6 +28,7 @@ template <typename T> struct BinNode
 	BinNodePosi insertAsLC(T const&);
 	BinNodePosi insertAsRC(T const&);
 	int getHeight(const BinNodePosi x);
+	BinNodePosi succ();
 };
 
 #endif // !BIN_NODE_H

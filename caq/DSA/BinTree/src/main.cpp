@@ -9,8 +9,10 @@
 #include "PRINT.h"
 
 int main() {
+
+	//书本P129页，例子
 	BinTree<char> tree;  PRINT<char> print;
-	BinNode<char>* root = tree.insertAsRoot('b');
+	BinNode<char>* root = tree.insertAsRoot('b');  
 	BinNode<char>* a = tree.insertAsLC(root, 'a');
 	BinNode<char>* f = tree.insertAsRC(root, 'f');
 	BinNode<char>* d = tree.insertAsLC(f, 'd');

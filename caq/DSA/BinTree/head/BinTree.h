@@ -22,4 +22,15 @@ public:
 
 };
 
+#include "../src/BinNode_insert.h"
+#include "../src/BinNode_size.h"
+#include "../src/BinTree_inorderTravel.h"
+#include "../src/BinTree_insert.h"
+#include "../src/BinTree_postorderTravel.h"
+#include "../src/BinTree_preorderTravel.h"
+#include "../src/BinTree_traver.h"
+#include "../src/BinTree_updateHeight.h"
+#include "../src/PRINT.h"
+#include "../src/BinNode_succ.h"
+
 #endif
