@@ -1,0 +1,7 @@
+#include "pq_macro.h"
+#include "pq_getMax.h"
+#include "pq_delMax.h"
+#include "pq_insert.h"
+#include "pq_up.h"
+#include "pq_down.h"
+#include "pq_heapify.h"
