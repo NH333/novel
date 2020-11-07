@@ -1,0 +1,29 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "type": "shell",
+        "label": "gcc build active file",
+        "command": "/usr/bin/gcc",
+        "args": [
+            //"-lstdc++",
+            "-std=c++14",
+            "-g", "${fileDirname}/my_echo.cpp", "${fileDirname}/InetAddress.cpp", "${fileDirname}/Acceptor.cpp", "${fileDirname}/Socket.cpp","${fileDirname}/TcpStream.cpp",
+            "-o", "${fileDirname}/my_echo",
+            "-lstdc++",
+            "-lpthread",
+            "-I",
+            "/home/chenanqi/cpp/myTools/my_echo/include"
+            //"-std=c++11"    
+        ],
+        "options": {
+          "cwd": "/usr/bin"
+        },
+        "problemMatcher": ["$gcc"],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        }
+      }
+    ]
+  }
